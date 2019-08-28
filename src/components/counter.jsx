@@ -1,18 +1,14 @@
-import React, { Component } from 'react';
-import { log } from 'util';
-  
+import React, { Component } from 'react'; 
 class Counter extends Component {
     state = {
         count: 0,
-        reset: -1,
+        reset: 1,
     };
-
     handleIncrement =  () =>{
-       this.setState({count : this.state.count + 1})
-     
+       this.setState({count : this.state.count + 1}) 
     }
     handleDecrement = () =>{
-        this.setState({count : this.state.count = 0})
+        this.setState({count : this.state.count = 0 })
     }
     render() { 
         return (
